@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="py-12">
+    <h1 class="text-3xl font-bold text-white mb-2">Technical Projects</h1>
+    <p class="text-slate-400 mb-10">A collection of my work in AI, Computer Vision, and Web Development.</p>
+
+    <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-slate-800 border border-slate-700 rounded-xl overflow-hidden hover:border-blue-500 transition-all flex flex-col">
+            <img src="/static/images/projects/voyager-shopping-cart.png" alt="Voyager Shopping Cart" class="w-full h-48 object-contain border-b border-slate-700">
+            <div class="p-6 flex-grow">
+                <h3 class="text-xl font-bold text-white">Voyager Shopping Cart</h3>
+                <p class="text-blue-400 text-sm mb-4">Ruby on Rails | ReactJS | PostgreSQL</p>
+                <p class="text-slate-400 text-sm mb-6">Full-stack e-commerce platform with product listings, cart management, and user authentication.</p>
+                <div class="mt-auto">
+                    <a href="https://github.com/Trunkg0d/Voyager-shopping-cart" class="text-xs font-mono bg-slate-700 px-3 py-1 rounded hover:bg-slate-600 inline-block text-white">GITHUB</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-slate-800 border border-slate-700 rounded-xl overflow-hidden hover:border-blue-500 transition-all flex flex-col">
+            <img src="/static/images/projects/neural-machine-translation.png" alt="Neural Machine Translation" class="w-full h-48 object-contain border-b border-slate-700">
+            <div class="p-6 flex-grow">
+                <h3 class="text-xl font-bold text-white">Neural Machine Translation</h3>
+                <p class="text-blue-400 text-sm mb-4">NLP | Seq2Seq | Attention</p>
+                <p class="text-slate-400 text-sm mb-6">Translation system for English to Portuguese, employing a Seq2Seq model with attention mechanism.</p>
+                <div class="mt-auto">
+                    <a href="https://github.com/Trunkg0d/Neural-Machine-Translation" class="text-xs font-mono bg-slate-700 px-3 py-1 rounded hover:bg-slate-600 inline-block text-white">GITHUB</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-slate-800 border border-slate-700 rounded-xl overflow-hidden hover:border-blue-500 transition-all flex flex-col">
+            <img src="/static/images/projects/image-transform-web.png" alt="Image Transform Web" class="w-full h-48 object-contain border-b border-slate-700">
+            <div class="p-6 flex-grow">
+                <h3 class="text-xl font-bold text-white">Image Transform Web</h3>
+                <p class="text-blue-400 text-sm mb-4">Flask | Python | OpenCV</p>
+                <p class="text-slate-400 text-sm mb-6">Web application for image manipulation, including color adjustments, smoothing, and edge detection.</p>
+                <div class="mt-auto">
+                    <a href="https://github.com/Trunkg0d/Image_Transform_Web" class="text-xs font-mono bg-slate-700 px-3 py-1 rounded hover:bg-slate-600 inline-block text-white">GITHUB</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-slate-800 border border-slate-700 rounded-xl overflow-hidden hover:border-blue-500 transition-all flex flex-col">
+            <img src="/static/images/projects/text-similarities-tool.png" alt="Text Similarities Tool" class="w-full h-48 object-contain border-b border-slate-700">
+            <div class="p-6 flex-grow">
+                <h3 class="text-xl font-bold text-white">Text Similarities Tool</h3>
+                <p class="text-blue-400 text-sm mb-4">PyTorch | Hugging Face | Streamlit</p>
+                <p class="text-slate-400 text-sm mb-6">Tool for identifying text similarities using Siamese networks fine-tuned with pre-trained models.</p>
+                <div class="mt-auto">
+                    <a href="https://github.com/Trunkg0d/Text_Similarities_Tool" class="text-xs font-mono bg-slate-700 px-3 py-1 rounded hover:bg-slate-600 inline-block text-white">GITHUB</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-slate-800 border border-slate-700 rounded-xl overflow-hidden hover:border-blue-500 transition-all flex flex-col">
+            <img src="/static/images/projects/medical-image-segmentation.png" alt="Medical Image Segmentation" class="w-full h-48 object-contain border-b border-slate-700">
+            <div class="p-6 flex-grow">
+                <h3 class="text-xl font-bold text-white">Medical Image Segmentation</h3>
+                <p class="text-blue-400 text-sm mb-4">Deep Learning | PyTorch | Computer Vision</p>
+                <p class="text-slate-400 text-sm mb-6">Deep learning project analyzing CT and MRI scans to detect and segment abnormalities.</p>
+                <div class="mt-auto">
+                    <a href="https://github.com/Trunkg0d/Medical-Image-Segmentation" class="text-xs font-mono bg-slate-700 px-3 py-1 rounded hover:bg-slate-600 inline-block text-white">GITHUB</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

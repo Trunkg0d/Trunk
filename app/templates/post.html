@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<article class="max-w-4xl mx-auto py-12 px-6">
+    <header class="mb-10 border-b border-slate-800 pb-8">
+        <a href="/blog" class="text-blue-400 hover:text-blue-300 text-sm font-mono tracking-tight mb-4 inline-block">
+            &larr; BACK TO RESEARCH
+        </a>
+        <h1 class="text-4xl font-extrabold text-white mb-2 leading-tight">{{ title }}</h1>
+        <p class="text-slate-500 text-sm italic">Published on {{ date }}</p>
+    </header>
+    
+    <div class="prose prose-invert prose-blue max-w-none">
+        {{ content | safe }}
+    </div>
+</article>
+{% endblock %}

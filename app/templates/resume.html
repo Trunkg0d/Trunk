@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="max-w-3xl mx-auto py-12 px-4">
+    <div class="flex justify-between items-center mb-10">
+        <h1 class="text-4xl font-bold text-white">Resume</h1>
+        <a href="{{ url_for('static', path='/LePhamHoangTrung.pdf') }}" 
+        download="LePhamHoangTrung.pdf" 
+        class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded text-sm transition shadow-lg flex items-center">Download PDF</a>
+    </div>
+<!-- 
+    <div class="flex justify-between items-center mb-10">
+    <h1 class="text-4xl font-bold text-white">Resume</h1>
+    
+    <a href="{{ url_for('static', path='/LePhamHoangTrung.pdf') }}" 
+    download="LePhamHoangTrung.pdf" 
+    class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded text-sm transition shadow-lg flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+        </svg>
+        Download PDF
+    </a>
+    </div> -->
+
+    <div class="mb-12">
+        <h2 class="text-xl font-bold text-blue-400 uppercase tracking-wider mb-6 flex items-center">
+            <span class="mr-2">🎓</span> Education
+        </h2>
+        <div class="space-y-8">
+            <div class="border-l-2 border-blue-500/30 pl-6 ml-2">
+                <div class="flex flex-wrap justify-between items-start mb-1">
+                    <h3 class="text-lg font-semibold text-white">MSc in Artificial Intelligence</h3>
+                    <span class="text-slate-500 text-sm">2025 — Present</span>
+                </div>
+                <p class="text-blue-400 text-sm mb-2">University of Science, VNU-HCM</p>
+                <p class="text-slate-400 text-sm italic">Currently pursuing a Master's degree in Artificial Intelligence.</p>
+            </div>
+
+            <div class="border-l-2 border-slate-700 pl-6 ml-2">
+                <div class="flex flex-wrap justify-between items-start mb-1">
+                    <h3 class="text-lg font-semibold text-white">BSc in Artificial Intelligence</h3>
+                    <span class="text-slate-500 text-sm">2021 — 2025</span>
+                </div>
+                <p class="text-blue-400 text-sm mb-2">University of Science, VNU-HCM</p>
+                <div class="text-slate-400 text-sm space-y-1">
+                    <p>• <span class="text-white">GPA: 9.08 / 10.0</span> (Top 2 students, First Graduating Cohort)</p>
+                    <p>• Selected to represent the program at the commencement ceremony.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-12">
+        <h2 class="text-xl font-bold text-blue-400 uppercase tracking-wider mb-6 flex items-center">
+            <span class="mr-2">💼</span> Experience
+        </h2>
+        <div class="space-y-8">
+            <div class="border-l-2 border-blue-500/30 pl-6 ml-2">
+                <div class="flex flex-wrap justify-between items-start mb-1">
+                    <h3 class="text-lg font-semibold text-white">Teaching Assistant</h3>
+                    <span class="text-slate-500 text-sm">Oct 2025 — Present</span>
+                </div>
+                <p class="text-blue-400 text-sm mb-3">University of Information Technology, VNU-HCM</p>
+                <ul class="text-slate-400 text-sm space-y-2 list-disc ml-4">
+                    <li>Teaching courses: AI for Networking and Communications, Introduction to Computer Networks.</li>
+                    <li>Contributing to research projects with the IEC Research Group, focusing on AI Model Security.</li>
+                </ul>
+            </div>
+
+            <div class="border-l-2 border-slate-700 pl-6 ml-2">
+                <div class="flex flex-wrap justify-between items-start mb-1">
+                    <h3 class="text-lg font-semibold text-white">AI Researcher (Intern)</h3>
+                    <span class="text-slate-500 text-sm">Jan 2023 — Present</span>
+                </div>
+                <p class="text-blue-400 text-sm mb-3">IEC Research Group</p>
+                <ul class="text-slate-400 text-sm space-y-2 list-disc ml-4">
+                    <li>Developed a novel GNN model for rumor detection and defense methods for Dropout Attacks.</li>
+                    <li>Investigated Bit-Flip Attacks in Collaborative Inference and synthesized findings for international journals.</li>
+                </ul>
+            </div>
+
+            <div class="border-l-2 border-slate-700 pl-6 ml-2">
+                <div class="flex flex-wrap justify-between items-start mb-1">
+                    <h3 class="text-lg font-semibold text-white">Ruby on Rails Developer (Intern)</h3>
+                    <span class="text-slate-500 text-sm">Nov 2022 — Jan 2023</span>
+                </div>
+                <p class="text-blue-400 text-sm mb-3">Voyager IT Inc.</p>
+                <ul class="text-slate-400 text-sm space-y-2 list-disc ml-4">
+                    <li>Developed e-commerce features using RoR, PostgreSQL, and Docker.</li>
+                    <li>Implemented SNS Login/Authentication and explored new stacks like React.js and FastAPI.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-12">
+        <h2 class="text-xl font-bold text-blue-400 uppercase tracking-wider mb-4 flex items-center">
+            <span class="mr-2">📄</span> Selected Publications
+        </h2>
+        <div class="bg-slate-800/40 p-5 rounded-lg border border-slate-700/50">
+            <p class="text-slate-300 text-sm mb-2 font-medium">Information Fusion (IF: 15.5):</p>
+            <p class="text-slate-400 text-xs italic">"MTAS: A Temporal-Aware Multiview Graph Attention Framework for Early Rumor Detection on Social Media" (2026)</p>
+        </div>
+    </div>
+
+    <div>
+        <h2 class="text-xl font-bold text-blue-400 uppercase tracking-wider mb-6 flex items-center">
+            <span class="mr-2">🛠️</span> Skills
+        </h2>
+        <div class="space-y-4">
+            <div>
+                <p class="text-slate-400 text-xs uppercase tracking-widest mb-3">Programming & Tools</p>
+                <div class="flex flex-wrap gap-2">
+                    {% for skill in ['Python', 'C++', 'SQL', 'Ruby on Rails', 'FastAPI', 'Flask', 'Docker', 'PyTorch', 'TensorFlow'] %}
+                    <span class="bg-slate-800 px-3 py-1 rounded border border-slate-700 text-sm text-slate-300 hover:border-blue-500/50 transition cursor-default">{{ skill }}</span>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="pt-2">
+                <p class="text-slate-400 text-xs uppercase tracking-widest mb-3">Specialization</p>
+                <div class="flex flex-wrap gap-2">
+                    {% for spec in ['Computer Vision', 'NLP', 'AI Security', 'Graph Neural Networks', 'Data Science'] %}
+                    <span class="bg-blue-900/20 px-3 py-1 rounded border border-blue-800/30 text-sm text-blue-300">{{ spec }}</span>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
