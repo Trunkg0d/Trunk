@@ -1,4 +1,5 @@
 from fastapi import APIRouter, Request
+from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 
 router = APIRouter()
@@ -15,3 +16,7 @@ async def resume(request: Request):
 @router.get("/projects")
 async def projects(request: Request):
     return templates.TemplateResponse("projects.html", {"request": request})
+
+@router.get("/publications", response_class=HTMLResponse)
+async def publications(request: Request):
+    return templates.TemplateResponse("publications.html", {"request": request})
